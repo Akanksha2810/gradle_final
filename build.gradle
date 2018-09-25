@@ -46,7 +46,7 @@ uploadArchives {
   repositories {
     mavenDeployer {
       repository(
-        url: "http://localhost:8081/repository/project_gradle/") {  
+        url: "${url}" {  
           authentication(userName: "${userName}", password: "${password}")
       }
 	        pom.version = "0.1.0"
